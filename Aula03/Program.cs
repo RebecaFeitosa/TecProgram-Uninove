@@ -1,7 +1,17 @@
-﻿//dois blocos de programação
-static void p1001(){
-Console.Write("Prog 1");
+﻿static void p1001(){
+/* Leia dois valores inteiros e armazene-os nas variáveis A e B.
+Efetue a soma de A e B atribuindo o seu resultado na variável X. 
+Imprima X conforme exemplo abaixo. Não apresente mensagem alguma 
+além daquilo que está especificado e não esqueça de imprimir o fim de linha (\n) 
+após o resultado.   */
+
+    int a, b, x;
+    a = Convert.ToInt32(Console.ReadLine());
+    b = Convert.ToInt32(Console.ReadLine());
+    x = a + b;
+    Console.Write("X = {0}\n", x);
 }
+
 static void p1002(){
     Console.Write("Prog 2");
 }
