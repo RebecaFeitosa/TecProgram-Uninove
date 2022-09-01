@@ -22,6 +22,7 @@ static void p1003(){
             case 1001:  p1001();    break;
             case 1002:  p1002();    break;
             case 1003:  p1003();    break;
+            case 0:     Console.Write("\nObrigada por utilizar nosso Software\n");    break;
             default:    Console.Write("\nOpção Inválida\n");    break;
         }   /*se não colocar o break na frente de cada um, 
             ele vai rodar 1001, depois 1002 assim sucessivamente */
