@@ -26,7 +26,7 @@ static void p1002(){
     area = 3.14159 * Math.Pow(raio, 2.0); //2.0 porque é tipo double, para não dar erro
 
     Console.Write("A={0}\n", area.ToString("0.0000")); 
-    /*o ToString demilitou quantas casas decimais eu quero antes 
+    /*o ToString delimitou quantas casas decimais eu quero antes 
     e depois da vírgula --> Nesse caso, 0.0000 uma casa antes e 4 depois.   */
 
 }
