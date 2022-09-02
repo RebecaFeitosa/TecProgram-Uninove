@@ -1,4 +1,7 @@
-﻿static void p1001(){
+﻿//precisa converter para tipo númerico porque tudo que o usuário digita é uma string
+//exercícios abaixo (plataforma beecrowd)
+
+static void p1001(){
 /* Leia dois valores inteiros e armazene-os nas variáveis A e B.
 Efetue a soma de A e B atribuindo o seu resultado na variável X. 
 Imprima X conforme exemplo abaixo. Não apresente mensagem alguma 
@@ -13,7 +16,16 @@ após o resultado.   */
 }
 
 static void p1002(){
-    Console.Write("Prog 2");
+    /* A fórmula para calcular a área de uma circunferência é:
+    area = pi*raio². Considerando para este problema que pi=3.14159:
+    - Efetue o cálculo da área, elevando o valor de raio ao quadrado e multiplicando por pi.    */
+
+    double area, raio;
+    area = Convert.ToDouble(Console.ReadLine());
+    raio = Convert.ToDouble(Console.ReadLine());
+    area = 3.14159 * Math.Pow(raio, 2.0); //2.0 porque é tipo double, para não dar erro
+
+    Console.Write("A={0}\n", area.ToString("0.0000"));
 }
 
 static void p1003(){
