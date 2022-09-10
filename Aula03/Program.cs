@@ -175,7 +175,17 @@ seguido da mensagem "eh o maior". Utilize a fórmula MaiorAB= (a+b+abs(a-b))/2  
     Console.Write("{0} eh o maior", maiorAB);
 }
 
-static void p1014(){}
+static void p1014(){    //sz
+/* Calcule o consumo médio de um automóvel sendo fornecidos a distância total percorrida (em Km)
+e o total de combustível gasto (em litros) */
+
+    double distancia, combustivel, consumo;
+    distancia = Convert.ToDouble(Console.ReadLine());
+    combustivel = Convert.ToDouble(Console.ReadLine());
+    consumo = distancia/combustivel;
+
+    Console.Write("{0} Km/l\n", consumo.ToString("0.000"));
+}
 
 static void p1015(){}
 
