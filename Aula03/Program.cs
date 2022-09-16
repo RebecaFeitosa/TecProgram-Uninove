@@ -20,7 +20,6 @@ area = pi*raio². Considerando para este problema que pi=3.14159:
 - Imprima "A=" com 4 dígitos após o ponto decimal.    */
 
     double area, raio;
-    area = Convert.ToDouble(Console.ReadLine());
     raio = Convert.ToDouble(Console.ReadLine());
     area = 3.14159 * Math.Pow(raio, 2.0); //2.0 porque é tipo double, para não dar erro
 
@@ -74,7 +73,7 @@ a nota B tem peso 3 e a nota C tem peso 5. Considere que cada nota pode ir até 
     a = Convert.ToDouble(Console.ReadLine());
     b = Convert.ToDouble(Console.ReadLine());
     c = Convert.ToDouble(Console.ReadLine());
-    media = (a * 2) + (b * 3) + (c * 5)/ (2 + 3 + 5);
+    media = (a * 2 + b * 3 + c * 5) / (2 + 3 + 5);
 
     Console.Write("MEDIA = {0}\n", media.ToString("0.0"));
 } 
@@ -88,9 +87,9 @@ produto de C e D segundo a fórmula: DIFERENCA = (A*B-C*D) */
     b = Convert.ToInt32(Console.ReadLine());
     c = Convert.ToInt32(Console.ReadLine());
     d = Convert.ToInt32(Console.ReadLine());
-    diferenca = (a*b) - (c*d);
+    diferenca = a*b - c*d;
 
-    Console.Write("DIFERENCA = {0}", diferenca);
+    Console.Write("DIFERENCA = {0}\n", diferenca);
 }
 
 static void p1008(){    //sz
@@ -148,43 +147,83 @@ a ser pago. */
     preco2 = Convert.ToDouble(vetor[2]);
 
     //CÁLCULO
-    valor_total = (quant1 + preco1) + (quant2 *preco2);
+    valor_total = (quant1 * preco1) + (quant2 * preco2);
 
     Console.Write("VALOR A PAGAR: R$ {0}\n", valor_total.ToString("0.00"));
 }
 
-static void p1011(){}
+static void p1011(){    //sz
+/* Faça um programa que calcule e mostre o volume de uma esfera sendo fornecido o valor
+de seu raio (R). A fórmula para calcular o volume é: (4/3)*pi*R³. Considere (atribua) para
+pi o valor 3.14159  */
 
-static void p1012(){}
+    double R, volume, pi = 3.14159;
+
+    R = Convert.ToDouble(Console.ReadLine());
+    volume = (4.0/3.0) * pi * Math.Pow(R,3);
+
+    Console.WriteLine("VOLUME = {0}", volume.ToString("0.000"));
+}
+
+static void p1012(){    //sz
+/* Escreva um programa que leia três valores com ponto flutuante de dupla 
+precisão: A, B e C. Em seguida, calcule e mostre:
+a) a área do triângulo retângulo que tem A por base e C por altura.
+b) a área do círculo de raio C. (pi = 3.14159)
+c) a área do trapézio que tem A e B por bases e C por altura.
+d) a área do quadrado que tem lado B.
+e) a área do retângulo que tem lados A e B.   */
+
+    string linha_1;
+    double a,b,c,triangulo,circulo,trapezio,quadrado,retangulo,pi = 3.14159;
+
+    linha_1 = Console.ReadLine();
+    a = Convert.ToDouble(linha_1.Split(' ') [0]);
+    b = Convert.ToDouble(linha_1.Split(' ') [1]);
+    c = Convert.ToDouble(linha_1.Split(' ') [2]);
+
+    triangulo = 0.5 * a * c;
+    circulo = pi * Math.Pow(c, 2);
+    trapezio = ((a + b)/2 ) * c;
+    quadrado= Math.Pow(b, 2);
+    retangulo = a * b;
+
+    Console.Write("TRIANGULO: " + triangulo.ToString("0.000\n"));
+    Console.Write("CIRCULO: " + circulo.ToString("0.000\n"));
+    Console.Write("TRAPEZIO: " + trapezio.ToString("0.000\n"));;
+    Console.Write("QUADRADO: " + quadrado.ToString("0.000\n"));
+    Console.Write("RETANGULO: " + retangulo.ToString("0.000\n"));
+}
 
 static void p1013(){    //sz, duvida
 /* Faça um programa que leia três valores e apresente o maior dos três valores lidos
 seguido da mensagem "eh o maior". Utilize a fórmula MaiorAB= (a+b+abs(a-b))/2     */
     
     string linha;
-    int a, b, c, maiorAB;
+    int a, b, c, maiorAB, maior;
 
     linha = Console.ReadLine();
-    string[] vetor = linha.Split(' ');
+    a = Convert.ToInt32(linha.Split()[0]);
+    b = Convert.ToInt32(linha.Split()[1]);
+    c = Convert.ToInt32(linha.Split()[2]);
+    maiorAB = (a+b+Math.Abs(a-b))/2;
+    maior = (maiorAB + c + Math.Abs(maiorAB - c))/2;
 
-    a = Convert.ToInt32(vetor[0]);
-    b = Convert.ToInt32(vetor[1]);
-    c = Convert.ToInt32(vetor[2]);
-    maiorAB = (a+b+c+Math.Abs(a-b-c))/2;
-
-    Console.Write("{0} eh o maior", maiorAB);
+    Console.WriteLine("{0} eh o maior", maior);
 }
 
 static void p1014(){    //sz
 /* Calcule o consumo médio de um automóvel sendo fornecidos a distância total percorrida (em Km)
 e o total de combustível gasto (em litros) */
 
-    double distancia, combustivel, consumo;
-    distancia = Convert.ToDouble(Console.ReadLine());
-    combustivel = Convert.ToDouble(Console.ReadLine());
-    consumo = distancia/combustivel;
+    int a;
+    double b, combustivel;
 
-    Console.Write("{0} Km/l\n", consumo.ToString("0.000"));
+    a = Convert.ToInt32(Console.ReadLine());
+    b = Convert.ToDouble(Console.ReadLine());
+
+    combustivel = a / b;
+     Console.WriteLine(combustivel.ToString("0.000") + " km/l");
 }
 
 static void p1015(){}
