@@ -1,5 +1,9 @@
-﻿// Variável = espaço reservado na memória do computador.
-//int = inteiro
+﻿/* Variável = espaço reservado na memória do computador.
+int = inteiro
+double ou decimal = real
+string = caracteres 
+true(1) ou false (0)
+*/
 
 int a;
 
