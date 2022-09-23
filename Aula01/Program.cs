@@ -1,5 +1,6 @@
 ﻿// Variável = espaço reservado na memória do computador.
-//writeline pula linha
+//writeline significa pula linha
+
 // int = inteiro
 /*short a = 0215;
 
