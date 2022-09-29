@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rebec\\Desktop\\TI_Rebeca\\Repositórios\\TecProgram-Uninove\\Aula04\\Aula04.csproj": {}
+    "C:\\Users\\rebec\\Desktop\\Estudos\\Repositórios\\TecProgram-Uninove\\Aula04_exerciciosLogica\\Aula04.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rebec\\Desktop\\TI_Rebeca\\Repositórios\\TecProgram-Uninove\\Aula04\\Aula04.csproj": {
+    "C:\\Users\\rebec\\Desktop\\Estudos\\Repositórios\\TecProgram-Uninove\\Aula04_exerciciosLogica\\Aula04.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rebec\\Desktop\\TI_Rebeca\\Repositórios\\TecProgram-Uninove\\Aula04\\Aula04.csproj",
+        "projectUniqueName": "C:\\Users\\rebec\\Desktop\\Estudos\\Repositórios\\TecProgram-Uninove\\Aula04_exerciciosLogica\\Aula04.csproj",
         "projectName": "Aula04",
-        "projectPath": "C:\\Users\\rebec\\Desktop\\TI_Rebeca\\Repositórios\\TecProgram-Uninove\\Aula04\\Aula04.csproj",
+        "projectPath": "C:\\Users\\rebec\\Desktop\\Estudos\\Repositórios\\TecProgram-Uninove\\Aula04_exerciciosLogica\\Aula04.csproj",
         "packagesPath": "C:\\Users\\rebec\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rebec\\Desktop\\TI_Rebeca\\Repositórios\\TecProgram-Uninove\\Aula04\\obj\\",
+        "outputPath": "C:\\Users\\rebec\\Desktop\\Estudos\\Repositórios\\TecProgram-Uninove\\Aula04_exerciciosLogica\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rebec\\AppData\\Roaming\\NuGet\\NuGet.Config"
