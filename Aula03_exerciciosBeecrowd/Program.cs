@@ -1,6 +1,6 @@
 ﻿/*precisa converter para tipo númerico porque tudo que o usuário digita é uma string
-readline le tudo que está na linha até dar enter
-exercícios abaixo (plataforma beecrowd) */
+readline le tudo que está na linha até dar enter */
+// Exercícios abaixo (plataforma Beecrowd) 
 
 static void p1001(){
 /* Leia dois valores inteiros e armazene-os nas variáveis A e B.
