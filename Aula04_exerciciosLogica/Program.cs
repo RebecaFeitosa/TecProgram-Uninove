@@ -7,13 +7,20 @@
     x = a + b;
     Console.Write("X = {0}\n", x); */
 
-static void p1001(){
-//1 - Crie um programa para exibir o seu nome.
+static void p1001(){    //sz
+// 1 - Crie um programa para exibir o seu nome.
     Console.Write("Rebeca Feitosa");
 }
 
-static void p1002(){
-
+static void p1002(){    //sz
+// 2 - Crie um programa que some dois números.
+    int a, b, soma;
+    Console.Write("Digite um valor: ");
+    a = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Digite outro valor: ");
+    b = Convert.ToInt32(Console.ReadLine());
+    soma = a + b;
+    Console.Write("A soma dois dois números é: "+soma);
 }
 
 static void p1003(){
@@ -64,7 +71,7 @@ int prog;
     Console.Clear(); //limpar a tela
 
 do{
-        Console.Write("\nGerenciador de programas: ");
+        Console.Write("\n\nGerenciador de programas: ");
         Console.Write("\n\t| 0 para sair |\nDigite o programa desejado: ");
         prog = Convert.ToInt32(Console.ReadLine());
 
