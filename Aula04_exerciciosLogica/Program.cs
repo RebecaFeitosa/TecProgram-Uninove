@@ -2,11 +2,13 @@
 
 static void p1001(){    //sz
 // 1 - Crie um programa para exibir o seu nome.
+   
     Console.Write("Rebeca Feitosa");
 }
 
 static void p1002(){    //sz
 // 2 - Crie um programa que some dois números.
+    
     int a, b, soma;
     Console.Write("Digite um valor: ");
     a = Convert.ToInt32(Console.ReadLine());
@@ -18,6 +20,7 @@ static void p1002(){    //sz
 
 static void p1003(){    //sz
 // 3 - Crie um programa que solicite duas notas e calcule a média do aluno.
+    
     double nota1, nota2, media;
     Console.Write("Digite sua primeira nota: ");
     nota1 = Convert.ToDouble(Console.ReadLine());
@@ -30,6 +33,7 @@ static void p1003(){    //sz
 static void p1004(){    //sz
 /*  4 - Crie um programa que solicite duas notas do aluno, calcule a média 
 e informe se o aluno está "aprovado" ou "reprovado" (média 6.0) */
+    
     double nota1, nota2, media;
     Console.Write("Digite sua primeira nota: ");
     nota1 = Convert.ToDouble(Console.ReadLine());
@@ -53,6 +57,7 @@ foi aprovado ou não. */
 
 static void p1006(){    //sz
 // 6 - Crie um programa que solicita um número e informa se ele é positivo ou negativo. 
+    
     double numero;
     Console.Write("Digite um número: ");
     numero = Convert.ToDouble(Console.ReadLine());
@@ -66,6 +71,7 @@ static void p1006(){    //sz
 
 static void p1007(){    //sz
 // 7 - Crie um programa que solicita o ano de nascimento do usuário e informe a sua idade.
+    
     int ano, idade;
     Console.Write("Digite o seu ano de nascimento: ");
     ano = Convert.ToInt32(Console.ReadLine());
@@ -73,8 +79,9 @@ static void p1007(){    //sz
     Console.Write("Sua idade é: "+idade);
 }
 
-static void p1008(){
+static void p1008(){    //sz
 // 8 - Crie um programa que solicita a sua idade e informe o seu ano de nascimento.
+    
     int ano, idade;
     Console.Write("Digite o sua idade: ");
     idade = Convert.ToInt32(Console.ReadLine());
@@ -83,11 +90,23 @@ static void p1008(){
 }
 
 static void p1009(){
+/* 9 - Crie um programa que solicita um valor ao usuário (idade ou ano de nascimento) 
+e informe a sua idade ou a sua data de nascimento. */
 
 }
 
-static void p1010(){
+static void p1010(){    //sz
+// 10 - Criar um programa que solicite um numero do usuário e diga se ele é par ou ímpar.
 
+    double numero;
+    Console.Write("Digite um número: ");
+    numero = Convert.ToDouble(Console.ReadLine());
+
+    if (numero % 2 == 0){
+        Console.Write("O número que você digitou é par!");
+    }else{
+        Console.Write("O número que você digitou é ímpar!");
+    }
 }
 
 static void p1011(){
@@ -98,8 +117,15 @@ static void p1012(){
 
 }
 
-static void p1013(){
+static void p1013(){    //sz
+// 13 - Crie um programa que solicita um valor em metros e converta para centímetros.
 
+    double metros, centimetros;
+    Console.Write("Digite um valor em metros: ");
+    metros = Convert.ToDouble(Console.ReadLine());
+    centimetros = metros / 100;
+    Console.Write("O valor em cm é: "+centimetros);
+    
 }
 
 int prog;
