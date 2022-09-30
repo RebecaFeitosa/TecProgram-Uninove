@@ -23,12 +23,32 @@ static void p1002(){    //sz
     Console.Write("A soma dois dois números é: "+soma);
 }
 
-static void p1003(){
-
+static void p1003(){    //sz
+// 3 - Crie um programa que solicite duas notas e calcule a média do aluno.
+    double nota1, nota2, media;
+    Console.Write("Digite sua primeira nota: ");
+    nota1 = Convert.ToDouble(Console.ReadLine());
+    Console.Write("Digite sua segunda nota: ");
+    nota2 = Convert.ToDouble(Console.ReadLine());
+    media = (nota1 + nota2)/2;
+    Console.Write("Sua média é: "+media);
 }
 
 static void p1004(){
+/*  4 - Crie um programa que solicite duas notas do aluno, calcule a média e informe se o aluno
+está "aprovado" ou "reprovado" (média 6.0) */
+    double nota1, nota2, media;
+    Console.Write("Digite sua primeira nota: ");
+    nota1 = Convert.ToDouble(Console.ReadLine());
+    Console.Write("Digite sua segunda nota: ");
+    nota2 = Convert.ToDouble(Console.ReadLine());
+    media = (nota1 + nota2)/2;
 
+    if (media>=6){
+        Console.Write("Sua média é: "+media+"\nVocê foi aprovado!");
+    }else{
+        Console.Write("Sua média é: "+media+"\n"+"Você foi reprovado!");
+    }
 }
 
 static void p1005(){
