@@ -1,12 +1,5 @@
 ﻿// Exercícios abaixo (Problemas de lógica-pdf Prof. Daniel)
 
-
-/*  int a, b, x;
-    a = Convert.ToInt32(Console.ReadLine());
-    b = Convert.ToInt32(Console.ReadLine());
-    x = a + b;
-    Console.Write("X = {0}\n", x); */
-
 static void p1001(){    //sz
 // 1 - Crie um programa para exibir o seu nome.
     Console.Write("Rebeca Feitosa");
@@ -34,9 +27,9 @@ static void p1003(){    //sz
     Console.Write("Sua média é: "+media);
 }
 
-static void p1004(){
-/*  4 - Crie um programa que solicite duas notas do aluno, calcule a média e informe se o aluno
-está "aprovado" ou "reprovado" (média 6.0) */
+static void p1004(){    //sz
+/*  4 - Crie um programa que solicite duas notas do aluno, calcule a média 
+e informe se o aluno está "aprovado" ou "reprovado" (média 6.0) */
     double nota1, nota2, media;
     Console.Write("Digite sua primeira nota: ");
     nota1 = Convert.ToDouble(Console.ReadLine());
@@ -52,19 +45,41 @@ está "aprovado" ou "reprovado" (média 6.0) */
 }
 
 static void p1005(){
-
+/* 5 - Crie um programa que solicite 3 notas do aluno (Av1, Av2, Av3), 
+descarte a menor nota e exiba a média do aluno, informando se o mesmo 
+foi aprovado ou não. */
+   
 }
 
-static void p1006(){
+static void p1006(){    //sz
+// 6 - Crie um programa que solicita um número e informa se ele é positivo ou negativo. 
+    double numero;
+    Console.Write("Digite um número: ");
+    numero = Convert.ToDouble(Console.ReadLine());
 
+    if (numero>=0){
+        Console.Write("O número que você digitou é positivo!");
+    }else{
+        Console.Write("O número que você digitou é negativo!");
+    }
 }
 
-static void p1007(){
-
+static void p1007(){    //sz
+// 7 - Crie um programa que solicita o ano de nascimento do usuário e informe a sua idade.
+    int ano, idade;
+    Console.Write("Digite o seu ano de nascimento: ");
+    ano = Convert.ToInt32(Console.ReadLine());
+    idade = 2022 - ano;
+    Console.Write("Sua idade é: "+idade);
 }
 
 static void p1008(){
-
+// 8 - Crie um programa que solicita a sua idade e informe o seu ano de nascimento.
+    int ano, idade;
+    Console.Write("Digite o sua idade: ");
+    idade = Convert.ToInt32(Console.ReadLine());
+    ano = 2022 - idade;
+    Console.Write("Você nasceu em "+ano);
 }
 
 static void p1009(){
