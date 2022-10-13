@@ -17,7 +17,10 @@ if(n == 1){
             if(n == 4){
                 Console.Write("QUATRO");
             }else{
-                Console.Write("CINCO");
+                if(n == 5){
+                }else{
+                    Console.Write("CINCO");
+                }
             }
         }
     }
